@@ -1,0 +1,578 @@
+.content h1 {
+	padding: 30px 0;
+	margin: 0;
+	text-align: center;
+}
+
+.breadCrumbs {
+	display: inherit;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color: #817d7d;
+}
+
+.breadMenu a:after {
+	margin-left: 4px;
+	content: ">";
+}
+
+.breadMenu a:last-child:after {
+	display: none;
+}
+
+.thumbnails img {
+	width: 100%;
+	height: auto;
+}
+
+.text {
+	padding-top: 20px;
+}
+
+.cost {
+	padding-top: 15px;
+	padding-bottom: 20px;
+}
+
+.thumbnails h2 {
+	display: inline-block;
+	margin: 0;
+}
+
+.nice-select {
+	width: 100%;
+	border: 1px solid #bab4c2;
+	margin-bottom: 30px;
+	border-radius: 1px;
+}
+
+.openModelBtn {
+	display: inline-block;
+	width: 100%;
+	padding: 10px 15px;
+	border: 1px solid #bab4c2;
+	margin-bottom: 20px;
+	font-size: 14px;
+	cursor: pointer;	
+}
+
+.modal {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: none;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+	background-color: rgba(0,0,0,.8);
+}
+
+.modal.active {
+	display: block;
+}
+
+.modalWindow {
+	position: absolute;
+	top: 20%;
+	right: 0;
+	left: 0;
+	width: 480px;
+	padding: 15px;
+	margin: auto;
+	background-color: #fff;
+	box-shadow: 3px 3px 3px #000;
+}
+
+.closeModelBtn {
+	position: absolute;
+	top: 8px;
+	right: 15px;
+	width: 15px;
+	height: 15px;
+	background: url("../images/cross.svg") no-repeat center;
+	background-size: cover;
+	cursor: pointer;
+}
+
+
+.filter {
+    width: 100%;
+    height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: #eee;
+}
+
+.accordion__item {
+	padding-top: 15px;
+	padding-right: 20px;
+	padding-left: 15px;
+}
+
+.accordion__item:last-child {
+	padding-bottom: 10px;
+}
+
+.accordion__itemTitle {
+	display: flex;
+	justify-content: space-between;
+	font-size: 16px;
+	color: #000;
+	cursor: pointer;
+}
+
+.accordion__itemTitle:after {
+	content:"–"
+}
+
+.accordion__item input [type="checkbox"] {
+	display: block;
+	margin-bottom: 15px;
+}
+
+.accordion__catalog {
+	padding-top: 15px;
+	padding-right: 20px;
+	padding-left: 15px;
+}
+
+.accordion__catalog:last-child {
+	padding-bottom: 10px;
+}
+
+.accordion__catalogTitle {
+	display: flex;
+	justify-content: space-between;
+	font-size: 16px;
+	color: #000;
+	cursor: pointer;
+}
+
+.accordion__catalogTitle:after {
+	content:"–"
+}
+
+.accordion__catalog input [type="checkbox"] {
+	display: block;
+	margin-bottom: 15px;
+}
+
+.accordion__checkboxWrap {
+	display: none;
+}
+
+.inputWrap label {
+	display: flex;
+	margin-top: 10px;
+	align-content: center;
+	line-height: 1;
+}
+
+.inputWrap label:before {
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	border: 1px solid;
+	margin-right: 15px;
+	content: '';
+}
+
+#size00, 
+#size11, 
+#size22, 
+#size33, 
+#size44 {
+	display: none;
+}
+
+#brand00,
+#brand11,
+#brand22,
+#brand33,
+#brand44 {
+	display: none;
+}
+
+#season00,
+#season11,
+#season22 {
+	display: none;
+}
+
+#mShoes00,
+#mShoes11,
+#mShoes22,
+#mShoes33,
+#mShoes44,
+#mShoes55,
+#mShoes66 {
+	display: none;
+}
+
+#wShoes00,
+#wShoes11,
+#wShoes22,
+#wShoes33,
+#wShoes44 {
+	display: none;
+}
+
+#cShoes00,
+#cShoes11,
+#cShoes22,
+#cShoes33 {
+	display: none;
+}
+
+#size00:checked + label:before,
+#size11:checked + label:before, 
+#size22:checked + label:before,
+#size33:checked + label:before, 
+#size44:checked + label:before {
+	background-color: #000;
+}
+
+#brand00:checked + label:before,
+#brand11:checked + label:before, 
+#brand22:checked + label:before,
+#brand33:checked + label:before, 
+#brand44:checked + label:before {
+	background-color: #000;
+}
+
+#season00:checked + label:before,
+#season11:checked + label:before, 
+#season22:checked + label:before {
+	background-color: #000;
+}
+
+#mShoes00:checked + label:before,
+#mShoes11:checked + label:before, 
+#mShoes22:checked + label:before,
+#mShoes33:checked + label:before,
+#mShoes44:checked + label:before, 
+#mShoes55:checked + label:before,
+#mShoes66:checked + label:before {
+	background-color: #000;
+}
+
+#wShoes00:checked + label:before,
+#wShoes11:checked + label:before, 
+#wShoes22:checked + label:before,
+#wShoes33:checked + label:before,
+#wShoes44:checked + label:before {
+	background-color: #000;
+}
+
+#cShoes00:checked + label:before,
+#cShoes11:checked + label:before, 
+#cShoes22:checked + label:before,
+#cShoes33:checked + label:before {
+	background-color: #000;
+}
+
+.sizeQuestion {
+	display: block;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	font-size: 16px;
+	background-color: #fcb323;
+	text-decoration: underline;
+}
+
+.container h3 {
+	padding-top: 50px;
+	margin-top: 60px;
+	margin-bottom: 40px;
+	border-top-style: solid;
+	border-top-width: 2px;
+	border-top-color: #817d7d;
+	font-size: 28px;
+	text-align: center;
+}
+
+ul.pagination {
+	display: flex;
+	padding-left: 0;
+	justify-content: space-around;
+	list-style-type: none;
+}
+
+li.active a {
+	display: inline-block;
+	width: 20px;
+	border-radius: 10px;
+	text-align: center;
+	color: #fff;
+	background-color: #2d1c45;
+}
+
+.descriptionText {
+	display: inline-block;
+	margin-bottom: 100px;
+	font-size: 16px;
+	text-align: justify;
+}
+
+@media screen and (min-width: 480px) {
+
+
+}
+
+
+@media screen and (min-width: 768px) {
+
+
+.content h1 {
+	font-size: 26px;
+	text-align: left;
+}
+
+/*
+.col-xs-10 .leftSidebar {
+	margin-bottom: 30px;
+}*/
+
+.col-sm-4 img {
+	width: 100%;
+	height: auto;
+}
+
+.col-sm-4 h2 {
+	display: inline-block;
+	margin: 0;
+	font-size: 20px;
+}
+
+.description {
+	font-size: 16px;
+}
+
+}
+
+@media screen and (min-width: 992px) {
+
+.catalogLeftSidebar {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.accordion {
+	border: 2px solid #ddd;
+}
+
+.filter {
+    width: 100%;
+    height: 50px;
+    padding-top: 10px;
+	padding-bottom: 10px;
+    padding-left: 15px;
+    font-size: 20px;
+    font-weight: bolder;
+    background-color: #eee;
+}
+
+.accordion__item {
+	padding-top: 15px;
+	padding-right: 20px;
+	padding-left: 15px;
+}
+
+.accordion__item:last-child {
+	padding-bottom: 10px;
+}
+
+.accordion__itemTitle {
+	display: flex;
+	justify-content: space-between;
+	font-size: 16px;
+	color: #000;
+	cursor: pointer;
+}
+
+.accordion__itemTitle:after {
+	content:"–"
+}
+
+.accordion__item input [type="checkbox"] {
+	display: block;
+	margin-bottom: 15px;
+}
+
+.accordion__catalog {
+	padding-top: 15px;
+	padding-right: 20px;
+	padding-left: 15px;
+}
+
+.accordion__catalog:last-child {
+	padding-bottom: 10px;
+}
+
+.accordion__catalogTitle {
+	display: flex;
+	justify-content: space-between;
+	font-size: 16px;
+	color: #000;
+	cursor: pointer;
+}
+
+.accordion__catalogTitle:after {
+	content:"–"
+}
+
+.accordion__catalog input [type="checkbox"] {
+	display: block;
+	margin-bottom: 15px;
+}
+
+.accordion__checkboxWrap {
+	display: none;
+}
+
+.inputWrap label {
+	display: flex;
+	margin-top: 10px;
+	align-content: center;
+	line-height: 1;
+}
+
+.inputWrap label:before {
+	display: inline-block;
+	width: 13px;
+	height: 13px;
+	border: 1px solid;
+	margin-right: 15px;
+	content: '';	
+}
+
+#size, 
+#size1, 
+#size2, 
+#size3, 
+#size4 {
+	display: none;
+}
+
+#brand,
+#brand1,
+#brand2,
+#brand3,
+#brand4 {
+	display: none;
+}
+
+#season,
+#season1,
+#season2 {
+	display: none;
+}
+
+#mShoes,
+#mShoes1,
+#mShoes2,
+#mShoes3,
+#mShoes4,
+#mShoes5,
+#mShoes6 {
+	display: none;
+}
+
+#wShoes,
+#wShoes1,
+#wShoes2,
+#wShoes3,
+#wShoes4 {
+	display: none;
+}
+
+#cShoes,
+#cShoes1,
+#cShoes2,
+#cShoes3 {
+	display: none;
+}
+
+#size:checked + label:before,
+#size1:checked + label:before, 
+#size2:checked + label:before,
+#size3:checked + label:before, 
+#size4:checked + label:before {
+	background-color: #000;
+}
+
+#brand:checked + label:before,
+#brand1:checked + label:before, 
+#brand2:checked + label:before,
+#brand3:checked + label:before, 
+#brand4:checked + label:before {
+	background-color: #000;
+}
+
+#season:checked + label:before,
+#season1:checked + label:before, 
+#season2:checked + label:before {
+	background-color: #000;
+}
+
+#mShoes:checked + label:before,
+#mShoes1:checked + label:before, 
+#mShoes2:checked + label:before,
+#mShoes3:checked + label:before,
+#mShoes4:checked + label:before, 
+#mShoes5:checked + label:before,
+#mShoes6:checked + label:before {
+	background-color: #000;
+}
+
+#wShoes:checked + label:before,
+#wShoes1:checked + label:before, 
+#wShoes2:checked + label:before,
+#wShoes3:checked + label:before,
+#wShoes4:checked + label:before {
+	background-color: #000;
+}
+
+#cShoes:checked + label:before,
+#cShoes1:checked + label:before, 
+#cShoes2:checked + label:before,
+#cShoes3:checked + label:before {
+	background-color: #000;
+}
+
+.sizeQuestion {
+	display: block;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	font-size: 16px;
+	background-color: #fcb323;
+	text-decoration: underline;
+}
+
+.sizeQuestion a:hover {
+	color: #b05013;
+}
+
+
+}
+
+
+@media screen and (min-width: 1200px) {
+
+
+}
